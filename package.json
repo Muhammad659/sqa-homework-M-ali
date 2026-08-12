@@ -1,0 +1,21 @@
+{
+  "name": "pre-login-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test tests/prelogin.spec.ts --workers=1 --retries=0",
+    "test:chromium": "playwright test tests/prelogin.spec.ts --project=chromium --workers=1 --retries=0",
+    "test:list": "playwright test --list --reporter=list",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "dotenv": "^17.4.2"
+  }
+}
